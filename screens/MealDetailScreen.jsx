@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-const MealDetailScreen = (props) => {
+const MealDetailScreen = (props): ReactNode => {
 	return (
 		<View style={styles.screen}>
 			<Text>MealDetailScreen</Text>
