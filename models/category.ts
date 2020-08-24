@@ -1,13 +1,13 @@
-
-export interface CategoryType {
-  id: string;
-  title: string;
-  color: string;
-}
+//
+// export interface CategoryType {
+//   id: string;
+//   title: string;
+//   color: string;
+// }
 
 class Category {
-  private id: string;
-  private title: string;
+  id: string;
+  title: string;
   private color: string;
 
   constructor(id: string, title: string, color: string) {

@@ -15,9 +15,13 @@ export enum ROUTES {
   MealDetail = "MealDetail",
 }
 
+// @ts-ignore
 const MealsNavigator = createStackNavigator({
   [ROUTES.Categories]: {
-    screen: CategoriesScreen
+    screen: CategoriesScreen,
+    navigationOptions: {
+      headerTitle: 'Meal Categories'
+    }
   },
   [ROUTES.CategoryMeals]: CategoryMealsScreen,
   [ROUTES.MealDetail]: MealDetailScreen
@@ -26,7 +30,7 @@ const MealsNavigator = createStackNavigator({
     // mode: 'modal',
     // initialRouteName: 'MealDetail',
     defaultNavigationOptions: {
-      headerTitle: 'No Name!!!',
+      headerTitle: 'Default Screen Name!!!',
       headerStyle: {
         backgroundColor: Platform.OS === 'android' ? Colors.primaryColor : ''
       },
